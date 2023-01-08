@@ -11,13 +11,17 @@ namespace LogicalProgram
         static void Main(string[] args)
         {
             Console.WriteLine("choose the Option");
-            Console.WriteLine("1.Fibonacci Series");
+            Console.WriteLine("1.Fibonacci Series\n2.Perfect Number");
             int Option = Convert.ToInt32(Console.ReadLine());
             switch (Option)
             {
                 case 1:
                     FibonacciSeries fibonacci = new FibonacciSeries();
                     fibonacci.CheckFibonacciSeries();
+                    break;
+                case 2:
+                    PerfectNumber perfect = new PerfectNumber();
+                    perfect.perfectnumber();
                     break;
                 
             }
