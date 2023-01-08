@@ -11,7 +11,7 @@ namespace LogicalProgram
         static void Main(string[] args)
         {
             Console.WriteLine("choose the Option");
-            Console.WriteLine("1.Fibonacci Series\n2.Perfect Number\n3.Prime Number\n4.Reverse Number\n5.Coupan Number");
+            Console.WriteLine("1.Fibonacci Series\n2.Perfect Number\n3.Prime Number\n4.Reverse Number\n5.Coupan Number\n6.Stopwatch");
             int Option = Convert.ToInt32(Console.ReadLine());
             switch (Option)
             {
@@ -34,6 +34,10 @@ namespace LogicalProgram
                 case 5:
                     CoupanCodeNumber coupan = new CoupanCodeNumber();
                     coupan.GetCouponNumber();
+                    break;
+                case 6:
+                    Stopwatch watch = new Stopwatch();
+                    watch.stopwatch();
                     break;
 
                 
