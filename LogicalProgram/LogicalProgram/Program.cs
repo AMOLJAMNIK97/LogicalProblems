@@ -11,7 +11,7 @@ namespace LogicalProgram
         static void Main(string[] args)
         {
             Console.WriteLine("choose the Option");
-            Console.WriteLine("1.Fibonacci Series\n2.Perfect Number\n3.Prime Number");
+            Console.WriteLine("1.Fibonacci Series\n2.Perfect Number\n3.Prime Number\n4.Reverse Number");
             int Option = Convert.ToInt32(Console.ReadLine());
             switch (Option)
             {
@@ -26,6 +26,10 @@ namespace LogicalProgram
                 case 3:
                     PrimeNumber prime = new PrimeNumber();
                     prime.CheckPrime();
+                    break;
+                case 4:
+                    ReverseNumber reverse = new ReverseNumber();
+                    reverse.CreatReverseNumber();
                     break;
                 
             }
